@@ -1,6 +1,6 @@
 # 概要
 
-[チームラボオンラインスキルアップ課題を参考にサンプルアプリの作成](https://team-lab.github.io/skillup/)
+[チームラボオンラインスキルアップ課題](https://team-lab.github.io/skillup/)を参考にサンプルアプリの作成
 
 
 ## 起動・停止
