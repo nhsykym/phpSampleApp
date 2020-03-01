@@ -17,6 +17,7 @@
   }
 
   $name = "John";
+  
   $sth_select->execute(array($name));
   $prepare_result = $sth_select->fetchAll();
 
