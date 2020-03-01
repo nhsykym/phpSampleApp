@@ -7,7 +7,7 @@
     $dbh = new PDO($dsn, $user, $pass);
     
     //クエリ
-    $sth_select = $dbh->prepare('SELECT * FROM text_comments WHERE name = ?');
+    $sth_select = $dbh->prepare('SELECT * FROM test_comments WHERE name = ?');
 
     //DB切断
     $dbh = null;
@@ -16,13 +16,12 @@
     die();
   }
 
-  $name = "John";
+  $name = "狐耳のおじさん";
   $sth_select->execute(array($name));
   $prepare_result = $sth_select->fetchAll();
 
   foreach ($prepare_result as $row) {
     print $row["name"] . ": " . $row["text"] . "<br/>";
   }
-  $sth_select->execute(array($name));
 
 ?>
